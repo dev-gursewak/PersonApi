@@ -1,7 +1,10 @@
-﻿namespace PersonApi.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PersonApi.Models
 {
     public class PersonDetails
     {
+        [Key]
         public int PersonId { get; set; }
         public string Name { get; set; }
         public string Phone { get; set; }

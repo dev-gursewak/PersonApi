@@ -1,6 +1,21 @@
-@PersonApi_HostAddress = http://localhost:5235
+@PersonApi_HostAddress = https://localhost:7084
 
 GET {{PersonApi_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+POST {{PersonApi_HostAddress}}/api/persondetails
+Content-Type: application/json
+
+{
+  "name" : "Jack Micheal",
+  "Phone": "7806801122",
+  "Email": "jackmicheal@email.com",
+  "Address": "1234 12a ave NW, Edmonton",
+  "PostalZip": "T0T 1R1",
+  "Region": "AB",
+  "Country": "Canada"
+}
 
 ###
