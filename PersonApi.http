@@ -19,3 +19,28 @@ Content-Type: application/json
 }
 
 ###
+
+@id=1
+PUT {{PersonApi_HostAddress}}/api/persondetails/{{id}}
+Content-Type: application/json
+
+{
+    "PersonId": "1",
+    "Name": "john Doe",
+    "Phone": "7801234567",
+    "Email": "JohnDoe#macewan.ca",
+    "Address": "9876 54 St SW, Edmonton",
+    "PostalZip": "T7T 9R9",
+    "Region": "AB",
+    "Country": "Canada"
+}
+
+###
+
+GET {{PersonApi_HostAddress}}/api/persondetails/{{id}}
+
+###
+
+DELETE {{PersonApi_HostAddress}}/api/persondetails/{{id}}
+
+###
